@@ -25,28 +25,40 @@ public:
         Temp.a = s1.a*s2.b + s2.a*s1.b;
         Temp.b = s1.b*s2.b;
         Temp.RutGon();
-        cout << "Tổng: " << Temp.a << "/" << Temp.b << endl;
+        if(Temp.b == 1) cout << "Tổng: " << Temp.a << endl;
+        else if (Temp.b < 0) cout << "Tổng: " << -1*Temp.a << "/" << -1*Temp.b << endl;
+        else if (Temp.b == 0) cout << "No result" << endl;
+        else cout << "Tổng: " << Temp.a << "/" << Temp.b << endl;
     }
     void Hieu(Phanso s1, Phanso s2){
         Phanso Temp;
         Temp.a = s1.a*s2.b - s2.a*s1.b;
         Temp.b = s1.b*s2.b;
         Temp.RutGon();
-        cout << "Hiệu: " << Temp.a << "/" << Temp.b << endl;
+        if(Temp.b == 1) cout << "Hiệu: " << Temp.a << endl;
+        else if (Temp.b < 0) cout << "Hiệu: " << -1*Temp.a << "/" << -1*Temp.b << endl;
+        else if (Temp.b == 0) cout << "No result" << endl;
+        else cout << "Hiệu: " << Temp.a << "/" << Temp.b << endl;
     }
     void Nhan(Phanso s1, Phanso s2){
         Phanso Temp;
         Temp.a = s1.a * s2.a;
         Temp.b = s1.b*s2.b;
         Temp.RutGon();
-        cout << "Nhân: " << Temp.a << "/" << Temp.b << endl;
+        if(Temp.b == 1) cout << "Tích: " << Temp.a << endl;
+        else if (Temp.b < 0) cout << "Tích: " << -1*Temp.a << "/" << -1*Temp.b << endl;
+        else if (Temp.b == 0) cout << "No result" << endl;
+        else cout << "Tích: " << Temp.a << "/" << Temp.b << endl;
     }
     void Chia(Phanso s1, Phanso s2){
         Phanso Temp;
         Temp.a = s1.a * s2.b;
         Temp.b = s1.b*s2.a;
         Temp.RutGon();
-        cout << "Chia: " << Temp.a << "/" << Temp.b << endl;
+        if(Temp.b == 1) cout << "Thương: " << Temp.a << endl;
+        else if (Temp.b < 0) cout << "Thương: " << -1*Temp.a << "/" << -1*Temp.b << endl;
+        else if (Temp.b == 0) cout << "No result" << endl;
+        else cout << "Thương: " << Temp.a << "/" << Temp.b << endl;
     }
 };
 int main(){
