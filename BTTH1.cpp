@@ -23,7 +23,7 @@ public:
     }
 };
 int main(){
-    //Nhập tử mẫu từ bàn phím, ví dụ ở đây là 4 và 8.
+    //Nhập tử mẫu từ bàn phím.
     int a , b;
     cin >> a >> b;
     Phanso test(a, b);
